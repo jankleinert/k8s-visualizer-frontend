@@ -22,6 +22,39 @@
   color: #61dafb;
 }
 
+circle { 
+  fill: cornflowerblue;
+  animation-duration: 2s;
+  animation-name: pulse;
+}
+
+circle.Running {
+  fill: green;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+circle.Pending {
+  fill: gold;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+.podlabel {
+  font: 16px arial;
+}
+
+@keyframes pulse {
+  from {
+    fill-opacity: 0;
+  }
+
+  to {
+    fill-opacity: 1;
+  }
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
