@@ -11,5 +11,11 @@ function subscribeToServices(cb) {
     socket.emit('subscribeToServices', 1000);
 }
 
+function subscribeToDeployments(cb) {
+    socket.on('deployments', deployments => cb(null, deployments));
+    socket.emit('subscribeToDeployments', 1000);
+}
+
 export { subscribeToPods }
 export { subscribeToServices }
+export { subscribeToDeployments }
