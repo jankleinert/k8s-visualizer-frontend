@@ -4,6 +4,7 @@
 In the project directory, you can run:
 
 ```
+export BACKEND_HOST=<the URL of your k8s-visualizer-backend service>
 node server.js
 ```
 
