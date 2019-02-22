@@ -4,9 +4,11 @@
 In the project directory, you can run:
 
 ```
-export BACKEND_HOST=<the URL of your k8s-visualizer-backend service>
+export BACKEND_HOST=<hostname.of.your.k8s-visualizer-backend.com>
 node server.js
 ```
+
+Do not include the protocol as part of the BACKEND_HOST.
 
 This will start the server component, which communicates with k8s-visualizer-backend.
 
