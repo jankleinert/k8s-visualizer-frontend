@@ -1,4 +1,6 @@
 
+Frontend for the k8s-visualizer-backend. Written using React, SVG, and socket.io to visualize pods, services, and deployments on a Kubernetes cluster.
+
 ## How to run
 
 In the project directory, you can run:
